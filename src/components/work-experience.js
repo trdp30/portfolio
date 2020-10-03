@@ -1,4 +1,5 @@
 import React from "react";
+import ContentHeader from "./helpers/content-header";
 import ExperienceDetails from "./helpers/experience-details";
 
 function WorkExperience() {
@@ -18,9 +19,7 @@ function WorkExperience() {
   ];
   return (
     <div className="ui segments">
-      <div className="ui segment">
-        <p className="text-weight-medium text-size-large">Work Experience</p>
-      </div>
+      <ContentHeader title="Work Experience" />
       <div className="ui segment">
         <div className="ui segments">
           {jobDetails.map((data, i) => (

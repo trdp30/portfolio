@@ -1,19 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function ExperienceDetails(props) {
+function EducationDetails(props) {
   const { data } = props;
   return (
     <div className="ui segment">
       <div className="ui grid margin">
         <div className="column content-logo-width">
-          <img width="24" src={data.image_url} loading="lazy" height="24" alt="" />
+          <img
+            width="24"
+            src="/assets/images/college.svg"
+            loading="lazy"
+            height="24"
+            alt=""
+            className="college-logo"
+          />
         </div>
         <div className="fourteen wide column">
           <p className="margin-no margin-five-bottom text-weight-bold text-size-normal">
-            {data.role}
+            {data.name}
           </p>
-          <p className="text-color-black margin-no margin-five-bottom">{data.org}</p>
+          <p className="text-color-black margin-no margin-five-bottom">{data.course}</p>
           <p className="text-color-black margin-no margin-five-bottom text-size-small">
             {data.duration}
           </p>
@@ -23,8 +30,8 @@ function ExperienceDetails(props) {
   );
 }
 
-export default ExperienceDetails;
+export default EducationDetails;
 
-ExperienceDetails.propTypes = {
+EducationDetails.propTypes = {
   data: PropTypes.object.isRequired
 };

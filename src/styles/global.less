@@ -1,5 +1,7 @@
 @import "./variables.less";
 
+@import "./print.less";
+
 body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
@@ -303,10 +305,21 @@ body {
 // Overwrite
 
 .ui.medium.circular.image {
-  height: 130px;
-  width: 130px;
+  height: 100px;
+  width: 100px;
 }
 
 .ui.progress .bar {
   height: 1em !important;
+}
+
+.college-logo {
+  background: var(--warm-gray-50, #b3b6b9);
+}
+
+.content-logo {
+  &-width {
+    max-width: 32px;
+    min-width: 32px;
+  }
 }

@@ -8,7 +8,7 @@ function SkillCard(props) {
   return (
     <Fragment>
       <div className="eight wide column text-right padding-vs">{data.name}</div>
-      <div className="eight wide column padding-vs">
+      <div className="eight wide middle aligned column padding-vs">
         <Progress percent={data.value} color="blue" className="margin-no" />
       </div>
     </Fragment>

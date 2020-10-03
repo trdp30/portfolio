@@ -1,24 +1,21 @@
 import React from "react";
+import ContentHeader from "./helpers/content-header";
 import SkillCard from "./helpers/skill-card";
 
 function Skills() {
   const skills = [
-    { name: "JavaScript", value: 50 },
-    { name: "Ember.js", value: 50 },
-    { name: "Gitlab", value: 50 },
-    { name: "Agile Project Management", value: 50 },
-    { name: "Scrum", value: 50 },
-    { name: "GitHub", value: 50 },
-    { name: "React.js", value: 50 },
-    { name: "React Native", value: 50 },
-    { name: "Cascading Style Sheets (CSS)", value: 50 },
-    { name: "Semantic HTML", value: 50 }
+    { name: "JavaScript", value: 80 },
+    { name: "React.js", value: 85 },
+    { name: "Ember.js", value: 85 },
+    { name: "React Native", value: 75 },
+    { name: "Cascading Style Sheets", value: 75 },
+    { name: "GitHub/Gitlab", value: 85 },
+    { name: "Agile Project Management", value: 75 },
+    { name: "Scrum", value: 95 }
   ];
   return (
     <div className="ui segments">
-      <div className="ui segment">
-        <p className="text-weight-medium text-size-large">Skills & Competences</p>
-      </div>
+      <ContentHeader title="Skills & Competences" />
       <div className="ui segment">
         <div className="ui grid margin-no">
           {skills.map((skill, i) => (

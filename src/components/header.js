@@ -3,13 +3,13 @@ import { Icon } from "semantic-ui-react";
 
 function Header() {
   return (
-    <div className="ui grid margin-no">
-      <div className="three wide middle aligned column">
+    <div className="ui stackable grid margin-no">
+      <div className="middle aligned column" style={{ width: 130 }}>
         <img className="ui medium circular image" src="/assets/images/profile-pic.jpeg" alt="" />
       </div>
       <div className="eight wide column">
-        <p className="text-size-big text-weight-medium">Trideep Kumar Das</p>
-        <p>
+        <p className="text-size-big text-weight-medium margin-no">Trideep Kumar Das</p>
+        <p className="margin-five-bottom">
           Maybe I don`t know your question`s answer, but I have the capability to find out the right
           answer.
         </p>
@@ -19,25 +19,25 @@ function Header() {
         </p>
       </div>
       <div className="five wide column text-right">
-        <p>
+        <p className="margin-five-bottom">
           <span className="margin-ten-right">trdp30@gmail.com</span>
           <Icon name="mail outline" />
         </p>
-        <p>
+        <p className="margin-five-bottom">
           <span className="margin-ten-right">+91-9706055724</span>
           <Icon name="phone" />
         </p>
-        <p>
+        <p className="margin-five-bottom">
           <span className="margin-ten-right">HSR Layout, Bangalore, 560068</span>
           <Icon name="map marker alternate" />
         </p>
-        <p>
+        <p className="margin-five-bottom">
           <a href="https://www.linkedin.com/in/trideep-das-817962133/" target="blank">
             <span className="margin-ten-right">trideep-das-81796213</span>
             <Icon name="linkedin" />
           </a>
         </p>
-        <p>
+        <p className="margin-five-bottom">
           <a href="https://github.com/trdp30" target="blank">
             <span className="margin-ten-right">trdp30</span>
             <Icon name="github" />
