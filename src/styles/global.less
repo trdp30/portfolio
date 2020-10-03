@@ -1,0 +1,153 @@
+@import "./variables.less";
+
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+// Text Classes
+.text {
+  &-justify {
+    text-align: justify;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-color {
+    &-positive {
+      color: @positive !important;
+    }
+    &-yellow {
+      color: @yellow !important;
+    }
+    &-orange {
+      color: @orange !important;
+    }
+    &-negative {
+      color: @negative !important;
+    }
+    &-white {
+      color: @white !important;
+    }
+    &-black {
+      color: @black !important;
+    }
+    &-grey {
+      color: @grey !important;
+    }
+    &-blue {
+      color: @blue !important;
+    }
+    &-semilightgrey {
+      color: @semilightgrey !important;
+    }
+    &-darkgrey {
+      color: @darkgrey !important;
+    }
+    &-verysemilightgrey {
+      color: lighten(grey, 45%) !important;
+    }
+    &-green {
+      color: @green !important;
+    }
+    &-red {
+      color: @red !important;
+    }
+    &-yellow {
+      color: @yellow !important;
+    }
+  }
+  &-weight {
+    &-bold {
+      font-weight: 700 !important;
+    }
+    &-medium {
+      font-weight: 500 !important;
+    }
+    &-normal {
+      font-weight: 400 !important;
+    }
+    &-light {
+      font-weight: 300 !important;
+    }
+    &-medium-bold {
+      font-weight: 600 !important;
+    }
+  }
+  &-size {
+    &-normal {
+      font-size: 14px !important;
+    }
+    &-small {
+      font-size: 0.8em !important;
+    }
+    &-average {
+      font-size: 0.9em !important;
+    }
+    &-normal {
+      font-size: 1.1em !important;
+    }
+    &-medium {
+      font-size: 1.2em !important;
+    }
+    &-large {
+      font-size: 1.5em !important;
+    }
+    &-big {
+      font-size: 2.5em !important;
+    }
+    &-bigger {
+      font-size: 3.5em !important;
+    }
+  }
+  &-center {
+    text-align: center !important;
+  }
+  &-left {
+    text-align: left !important;
+  }
+  &-right {
+    text-align: right !important;
+  }
+  &-justify {
+    text-align: justify !important;
+  }
+  &-uppercase {
+    text-transform: uppercase !important;
+  }
+  &-titlecase {
+    text-transform: capitalize !important;
+  }
+  &-align {
+    &-center {
+      text-align: center !important;
+    }
+  }
+}
+
+// Margin Class
+
+.margin {
+  &-no {
+    margin: 0;
+  }
+  &-ten {
+    &-right {
+      margin-right: 10px;
+    }
+    &-vertical {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// Overwrite
+
+.ui.medium.circular.image {
+  height: 130px;
+  width: 130px;
+}
