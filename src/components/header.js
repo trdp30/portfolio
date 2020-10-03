@@ -14,7 +14,7 @@ function Header() {
           answer.
         </p>
         <p>
-          Quote: If you think you are good, then you have be crazy about your stuff and people
+          Quote: If you think you are good, then you have to be crazy about your stuff and people
           should call you a psycho. Else you are not what you are thinking of.{" "}
         </p>
       </div>
