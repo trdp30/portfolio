@@ -30,15 +30,15 @@ function Projects() {
     },
     {
       name: "Proview Live Proctor",
-      roles: ["Owner", "Creator", "Maintainer", "Enhancer"],
+      roles: ["Creator", "Maintainer", "Enhancer"],
       description:
-        "Proview Live proctoring is a real time proctoring platform, where the proctor will be able to see the video and screen of the candidate and will be able to intervene through the chat if the candidate is cheating.",
+        "Proview Live proctoring is a real time proctoring platform, where the proctor able to see the video and screen of the candidate and able to intervene through the chat if the candidate is cheating.",
       framework: "ReactJs",
       keywords: ["react", "redux", "semantic-ui", "craco", "react-table", "getstream.io", "sentry"]
     },
     {
       name: "Passage Question",
-      roles: ["Owner", "Creator", "Maintainer", "Enhancer"],
+      roles: ["Creator", "Maintainer", "Enhancer"],
       description:
         "This is a assessment platform where candidate can give passage question type interview round.",
       framework: "ReactJs",
@@ -52,16 +52,16 @@ function Projects() {
       framework: "Hugo",
       keywords: ["hugo", "jQuery", "semantic-ui", "sentry"]
     },
-    {
-      name: "Pages",
-      roles: ["Troubleshooter"],
-      description: "This application content the landing page required for different organisation",
-      framework: "Hugo",
-      keywords: ["hugo", "jQuery", "semantic-ui", "sentry"]
-    },
+    // {
+    //   name: "Pages",
+    //   roles: ["Troubleshooter"],
+    //   description: "This application content the landing page required for different organisation",
+    //   framework: "Hugo",
+    //   keywords: ["hugo", "jQuery", "semantic-ui", "sentry"]
+    // },
     {
       name: "Homswag",
-      roles: ["Architecture", "Owner", "Creator", "Maintainer", "Enhancer"],
+      roles: ["Architecture", "Creator", "Maintainer", "Enhancer"],
       description:
         "Homswag is a freelancing mobile(android/ios) application project. It is a Banglore based startup in Salon industry. The application has functionality from placing appointment to track current appointment status",
       framework: "React Native",
@@ -72,7 +72,7 @@ function Projects() {
     <div className="ui segments box-shadow-none margin-no">
       <ContentHeader title="Project" />
       <div className="ui segment box-shadow-none padding-no">
-        <div className="ui segments box-shahow-none border-none">
+        <div className="ui segments box-shadow-none border-none">
           {projectsList.map((project, i) => (
             <ProjectDetails key={i} data={project} />
           ))}

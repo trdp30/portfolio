@@ -12,7 +12,7 @@ function Home() {
         <tbody>
           <tr>
             <td>
-              <div className="ui segments">
+              <div className="ui segments box-shadow-none border-none">
                 <div className="ui segment padding-no-vertical">
                   <Header />
                 </div>
