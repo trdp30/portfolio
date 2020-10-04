@@ -5,9 +5,10 @@ import SkillCard from "./helpers/skill-card";
 function Skills() {
   const skills = [
     { name: "JavaScript", value: 80 },
-    { name: "React.js", value: 85 },
-    { name: "Ember.js", value: 85 },
+    { name: "ReactJs", value: 85 },
+    { name: "EmberJs", value: 85 },
     { name: "React Native", value: 75 },
+    { name: "BackboneJs", value: 60 },
     { name: "Cascading Style Sheets", value: 75 },
     { name: "GitHub/Gitlab", value: 85 },
     { name: "Agile Project Management", value: 75 },

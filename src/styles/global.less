@@ -98,12 +98,6 @@ body {
     &-large {
       font-size: 1.5em !important;
     }
-    &-big {
-      font-size: 2.5em !important;
-    }
-    &-bigger {
-      font-size: 3.5em !important;
-    }
   }
   &-center {
     text-align: center !important;
@@ -146,6 +140,9 @@ body {
     }
   }
   &-five {
+    &-right {
+      margin-right: 5px;
+    }
     &-bottom {
       margin-bottom: 5px !important;
     }
@@ -299,6 +296,20 @@ body {
       padding-left: 5px !important;
       padding-right: 5px !important;
     }
+  }
+}
+
+// Float classes
+
+.float {
+  &-clear {
+    clear: both;
+  }
+  &-right {
+    float: right;
+  }
+  &-left {
+    float: left;
   }
 }
 
