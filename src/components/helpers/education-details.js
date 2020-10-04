@@ -17,7 +17,7 @@ function EducationDetails(props) {
           />
         </div>
         <div className="fourteen wide column">
-          <p className="margin-no margin-five-bottom text-weight-bold text-size-normal">
+          <p className="margin-no margin-five-bottom text-weight-medium text-size-normal">
             {data.name}
           </p>
           <p className="text-color-black margin-no margin-five-bottom">{data.course}</p>

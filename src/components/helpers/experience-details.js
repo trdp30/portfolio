@@ -10,7 +10,7 @@ function ExperienceDetails(props) {
           <img width="24" src={data.image_url} loading="lazy" height="24" alt="" />
         </div>
         <div className="fourteen wide column">
-          <p className="margin-no margin-five-bottom text-weight-bold text-size-normal">
+          <p className="margin-no margin-five-bottom text-weight-medium text-size-normal">
             {data.role}
           </p>
           <p className="text-color-black margin-no margin-five-bottom">{data.org}</p>

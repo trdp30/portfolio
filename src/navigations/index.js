@@ -5,6 +5,7 @@ import Home from "../screens/home";
 function Navigation(params) {
   return (
     <Switch>
+      <Route path="/" component={Home} />
       <Route path="/home" component={Home} />
     </Switch>
   );

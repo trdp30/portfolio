@@ -6,7 +6,7 @@ function RoleView({ data }) {
     <Fragment>
       {data.map((role, i) => (
         <span key={i} className="margin-five-right">
-          <b>{role}</b>
+          <span className="text-weight-medium">{role}</span>
           {i < data.length - 1 ? <span>,</span> : ""}
         </span>
       ))}

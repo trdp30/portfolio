@@ -6,10 +6,10 @@ import KeywordView from "./keyword-view";
 function ProjectDetails({ data }) {
   return (
     <div className="ui segment float-clear">
-      <p className="margin-five-bottom text-weight-bold text-size-normal">
+      <p className="margin-five-bottom text-weight-medium text-size-normal">
         {data.name}{" "}
         <span className="text-weight-normal text-size-small float-right">
-          Framework: <b>{data.framework}</b>
+          Framework: <span className="text-weight-medium">{data.framework}</span>
         </span>
       </p>
       <p className="margin-five-bottom">{data.description}</p>

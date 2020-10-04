@@ -6,7 +6,7 @@ function KeywordView({ data }) {
     <Fragment>
       {data.map((keyword, i) => (
         <span key={i} className="margin-five-right">
-          <b>{keyword}</b>
+          <span className="text-weight-medium">{keyword}</span>
           {i < data.length - 1 ? <span>,</span> : ""}
         </span>
       ))}
