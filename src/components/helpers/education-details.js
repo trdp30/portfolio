@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function EducationDetails(props) {
   const { data } = props;
   return (
-    <div className="ui segment">
+    <div className="ui segment box-shadow-none border-none">
       <div className="ui grid margin">
         <div className="column content-logo-width">
           <img

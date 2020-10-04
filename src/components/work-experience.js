@@ -18,10 +18,10 @@ function WorkExperience() {
     }
   ];
   return (
-    <div className="ui segments">
+    <div className="ui segments box-shadow-none margin-five-bottom">
       <ContentHeader title="Work Experience" />
-      <div className="ui segment">
-        <div className="ui segments">
+      <div className="ui segment padding-no box-shadow-none">
+        <div className="ui segments border-none box-shadow-none">
           {jobDetails.map((data, i) => (
             <ExperienceDetails key={i} data={data} />
           ))}

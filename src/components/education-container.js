@@ -11,10 +11,10 @@ function EducationContainer() {
     }
   ];
   return (
-    <div className="ui segments">
+    <div className="ui segments box-shadow-none margin-no">
       <ContentHeader title="Education" />
-      <div className="ui segment">
-        <div className="ui segments">
+      <div className="ui segment box-shadow-none padding-no">
+        <div className="ui segments box-shadow-none border-none">
           {educationList.map((data, i) => (
             <EducationDetails key={i} data={data} />
           ))}

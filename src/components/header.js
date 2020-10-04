@@ -4,11 +4,11 @@ import { Icon } from "semantic-ui-react";
 function Header() {
   return (
     <div className="ui stackable grid margin-no">
-      <div className="middle aligned column" style={{ width: 130 }}>
+      <div className="middle aligned column padding-vs-vertical" style={{ width: 130 }}>
         <img className="ui medium circular image" src="/assets/images/profile-pic.jpeg" alt="" />
       </div>
-      <div className="eight wide column">
-        <p className="text-size-big text-weight-medium margin-no">Trideep Kumar Das</p>
+      <div className="eight wide column padding-vs-vertical">
+        <p className="text-size-large text-weight-medium margin-no">Trideep Kumar Das</p>
         <p className="margin-five-bottom">
           Maybe I don`t know your question`s answer, but I have the capability to find out the right
           answer.
@@ -18,7 +18,7 @@ function Header() {
           should call you a psycho. Else you are not what you are thinking of.{" "}
         </p>
       </div>
-      <div className="five wide column text-right">
+      <div className="five wide column text-right padding-vs-vertical">
         <p className="margin-five-bottom">
           <span className="margin-ten-right">trdp30@gmail.com</span>
           <Icon name="mail outline" />

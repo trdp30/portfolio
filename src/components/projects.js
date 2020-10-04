@@ -39,21 +39,23 @@ function Projects() {
     {
       name: "Passage Question",
       roles: ["Owner", "Creator", "Maintainer", "Enhancer"],
-      description: "",
+      description:
+        "This is a assessment platform where candidate can give passage question type interview round.",
       framework: "ReactJs",
       keywords: ["react", "redux", "semantic-ui", "craco", "sentry"]
     },
     {
       name: "Custom Form",
       roles: ["Troubleshooter"],
-      description: "",
+      description:
+        "This application content the forms those are required for fillup before taking up an assessment and for the the evaluation process.",
       framework: "Hugo",
       keywords: ["hugo", "jQuery", "semantic-ui", "sentry"]
     },
     {
       name: "Pages",
       roles: ["Troubleshooter"],
-      description: "",
+      description: "This application content the landing page required for different organisation",
       framework: "Hugo",
       keywords: ["hugo", "jQuery", "semantic-ui", "sentry"]
     },
@@ -67,10 +69,10 @@ function Projects() {
     }
   ];
   return (
-    <div className="ui segments">
+    <div className="ui segments box-shadow-none margin-no">
       <ContentHeader title="Project" />
-      <div className="ui segment">
-        <div className="ui segments">
+      <div className="ui segment box-shadow-none padding-no">
+        <div className="ui segments box-shahow-none border-none">
           {projectsList.map((project, i) => (
             <ProjectDetails key={i} data={project} />
           ))}

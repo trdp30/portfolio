@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function ExperienceDetails(props) {
   const { data } = props;
   return (
-    <div className="ui segment">
+    <div className="ui segment box-shadow-none">
       <div className="ui grid margin">
         <div className="column content-logo-width">
           <img width="24" src={data.image_url} loading="lazy" height="24" alt="" />

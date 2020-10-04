@@ -5,7 +5,7 @@ import KeywordView from "./keyword-view";
 
 function ProjectDetails({ data }) {
   return (
-    <div className="ui segment float-clear">
+    <div className="ui segment float-clear padding-vs-vertical">
       <p className="margin-five-bottom text-weight-medium text-size-normal">
         {data.name}{" "}
         <span className="text-weight-normal text-size-small float-right">

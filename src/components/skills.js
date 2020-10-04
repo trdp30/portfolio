@@ -15,9 +15,9 @@ function Skills() {
     { name: "Scrum", value: 95 }
   ];
   return (
-    <div className="ui segments">
+    <div className="ui segments box-shadow-none margin-no margin-five-bottom">
       <ContentHeader title="Skills & Competences" />
-      <div className="ui segment">
+      <div className="ui segment box-shadow-none">
         <div className="ui grid margin-no">
           {skills.map((skill, i) => (
             <SkillCard key={i} data={skill} />

@@ -13,18 +13,18 @@ function Home() {
           <tr>
             <td>
               <div className="ui segments">
-                <div className="ui segment">
+                <div className="ui segment padding-no-vertical">
                   <Header />
                 </div>
-                <div className="ui segment">
+                <div className="ui segment padding-no">
                   <div className="ui stackable grid margin-no">
-                    <div className="ten wide column">
+                    <div className="six wide column padding-vs">
                       <WorkExperience />
-                      <Projects />
-                    </div>
-                    <div className="six wide column">
                       <Skills />
                       <EducationContainer />
+                    </div>
+                    <div className="ten wide column padding-vs">
+                      <Projects />
                     </div>
                   </div>
                 </div>
