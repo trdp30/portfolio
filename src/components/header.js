@@ -12,12 +12,20 @@ function Header() {
         <p className="margin-no">React | React Native | EmberJs Developer</p>
         <p className="margin-five-bottom">
           <span>
-            <Icon name="mail outline" />
-            <span className="margin-ten-right">trdp30@gmail.com</span>
+            <a
+              href="mailto:trdp30@gmail.com"
+              className="margin-ten-right text-color-red"
+              target="black"
+            >
+              <Icon name="mail outline" />
+              trdp30@gmail.com
+            </a>
           </span>
           <span>
-            <Icon name="phone" />
-            <span className="margin-ten-right">+91-9706055724</span>
+            <a href="tel:09706055724" className="margin-ten-right text-color-green" target="black">
+              <Icon name="phone" />
+              +91-9706055724
+            </a>
           </span>
           <span>
             <Icon name="map marker alternate" />
