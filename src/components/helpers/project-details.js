@@ -13,7 +13,7 @@ function ProjectDetails({ data }) {
         </span>
       </p>
       <p className="margin-five-bottom">{data.description}</p>
-      <p className="margin-five-bottom ">
+      <p className="margin-five-bottom">
         Role: <RoleView data={data.roles} />
       </p>
       <p className="margin-five-bottom text-size-average">
