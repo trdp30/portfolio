@@ -14,7 +14,7 @@ function Header() {
           <span>
             <a
               href="mailto:trdp30@gmail.com"
-              className="margin-ten-right text-color-red"
+              className="margin-ten-right text-color-red disableOnPrint"
               target="black"
             >
               <Icon name="mail outline" />
@@ -22,7 +22,11 @@ function Header() {
             </a>
           </span>
           <span>
-            <a href="tel:09706055724" className="margin-ten-right text-color-green" target="black">
+            <a
+              href="tel:09706055724"
+              className="margin-ten-right text-color-green disableOnPrint"
+              target="black"
+            >
               <Icon name="phone" />
               +91-9706055724
             </a>
