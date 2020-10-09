@@ -52,7 +52,6 @@ export const getById = (modelName) => {
       return {};
     }
     if (isValid(action, modelName)) {
-      debugger;
       if (Array.isArray(action.payload.result) && action.payload.result.length) {
         action.payload.result.forEach((id) => {
           if (draftState[id] && Object.keys(draftState[id]).length) {
