@@ -26,7 +26,7 @@ function Projects() {
       description:
         "Proview Client is a activity capture platform. Its capture events like `multiple face detection`, `copy/paste`, `record screen activity` etc. which are used to evaluate a candidate's assessment",
       framework: "BackboneJs",
-      keywords: ["backbone", "jquery", "sentry"]
+      keywords: ["backbone", "grunt", "browserify", "jquery", "sentry"]
     },
     {
       name: "Proview Live Proctor",
@@ -34,7 +34,16 @@ function Projects() {
       description:
         "Proview Live proctoring is a real time proctoring platform, where the proctor able to see the video and screen of the candidate and able to intervene through the chat if the candidate is cheating.",
       framework: "ReactJs",
-      keywords: ["react", "redux", "semantic-ui", "craco", "react-table", "getstream.io", "sentry"]
+      keywords: [
+        "react",
+        "redux",
+        "webpack",
+        "semantic-ui",
+        "craco",
+        "react-table",
+        "getstream.io",
+        "sentry"
+      ]
     },
     {
       name: "Passage Question",
@@ -42,7 +51,7 @@ function Projects() {
       description:
         "This is a assessment platform where candidate can give passage question type interview round.",
       framework: "ReactJs",
-      keywords: ["react", "redux", "semantic-ui", "craco", "sentry"]
+      keywords: ["react", "redux", "webpack", "semantic-ui", "craco", "sentry"]
     },
     {
       name: "Custom Form",
