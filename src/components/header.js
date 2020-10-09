@@ -1,7 +1,9 @@
 import React from "react";
 import { Icon } from "semantic-ui-react";
+import Email from "./helpers/email";
+import PropTypes from "prop-types";
 
-function Header() {
+function Header({ isCreateView = false }) {
   return (
     <div className="ui stackable grid margin-no">
       <div className="middle aligned column padding-vs-vertical" style={{ width: 104 }}>
@@ -11,16 +13,7 @@ function Header() {
         <p className="text-size-large text-weight-medium margin-five-bottom">Trideep Kumar Das</p>
         <p className="margin-no">React | React Native | EmberJs Developer</p>
         <p className="margin-five-bottom">
-          <span>
-            <a
-              href="mailto:trdp30@gmail.com"
-              className="margin-ten-right text-color-red disableOnPrint"
-              target="black"
-            >
-              <Icon name="mail outline" />
-              trdp30@gmail.com
-            </a>
-          </span>
+          <Email isCreateView={isCreateView} />
           <span>
             <a
               href="tel:09706055724"
@@ -54,3 +47,7 @@ function Header() {
 }
 
 export default Header;
+
+Header.propTypes = {
+  isCreateView: PropTypes.bool
+};

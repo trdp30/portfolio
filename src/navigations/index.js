@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import Create from "../screens/create";
 import Home from "../screens/home";
 
 function Navigation(params) {
@@ -7,6 +8,7 @@ function Navigation(params) {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/home" component={Home} />
+      <Route path="/create" component={Create} />
     </Switch>
   );
 }
