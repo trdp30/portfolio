@@ -1,5 +1,6 @@
 import React from "react";
 import PersonalDetails from "../../components/helpers/personal-details";
+import SkillDetails from "../../components/helpers/skill-details";
 
 function Create() {
   return (
@@ -9,7 +10,7 @@ function Create() {
         style={{ height: "calc(100vh - 20px)" }}
       >
         <div className="middle aligned column height-full">
-          <PersonalDetails />
+          <SkillDetails />
         </div>
       </div>
     </div>
