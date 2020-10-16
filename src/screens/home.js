@@ -1,44 +1,29 @@
 import React from "react";
-import EducationContainer from "../components/education-container";
-import Header from "../components/header";
-import Projects from "../components/projects";
-import Skills from "../components/skills";
-import WorkExperience from "../components/work-experience";
+import { Icon } from "semantic-ui-react";
 
 function Home() {
-  const printHandler = () => {
-    window.print();
-  };
   return (
     <div className="ui container">
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <div className="ui segments box-shadow-none border-none margin-ten-horizontal">
-                <div className="ui segment padding-no-vertical">
-                  <Header />
-                </div>
-                <div className="ui segment padding-no">
-                  <div className="ui stackable grid margin-no">
-                    <div className="six wide column padding-vs">
-                      <WorkExperience />
-                      <Skills />
-                      <EducationContainer />
-                    </div>
-                    <div className="ten wide column padding-vs">
-                      <Projects />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div className="ui segment text-center margin-no border-none box-shadow-none">
-        <div className="ui positive button" onClick={printHandler}>
-          Print or Save as Pdf
+      <div className="ui segments">
+        <div className="ui segment">
+          <div className="ui grid margin-no">
+            <div className="middle aligned column">
+              <p className="text-weight-medium text-size-large">Hi, I`m Trideep</p>
+              <p className="">React | React Native | Ember Js Developer</p>
+              <p>
+                <span>
+                  <a href="https://www.linkedin.com/in/trideep-das-817962133/" target="blank">
+                    <Icon name="linkedin" />
+                    <span className="margin-ten-right">trideep-das-81796213</span>
+                  </a>
+                  <a href="https://github.com/trdp30" target="blank">
+                    <Icon name="github" />
+                    <span className="margin-ten-right">trdp30</span>
+                  </a>
+                </span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
