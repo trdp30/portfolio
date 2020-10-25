@@ -1,12 +1,14 @@
 /* eslint-disable no-undef */
 import React, { useEffect, useState } from "react";
+import CalendarView from "../components/helpers/calendar/calendar-view";
 var CLIENT_ID = process.env.REACT_APP_GOOGLE_API_CLIENT_ID;
 var API_KEY = process.env.REACT_APP_GOOGLE_API_API_KEY;
 var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
-var SCOPES = "https://www.googleapis.com/auth/calendar.readonly";
+var SCOPES = "https://www.googleapis.com/auth/calendar";
 
 function Calendar() {
   const [isSignedIn, toggleSignIn] = useState(false);
+  const [calendarEvents, setCalendarEvents] = useState([]);
   function handleClientLoad() {
     gapi.load("client:auth2", initClient);
   }
@@ -42,6 +44,7 @@ function Calendar() {
       // signoutButton.style.display = "block";
       listUpcomingEvents();
     } else {
+      setCalendarEvents([]);
       // authorizeButton.style.display = "block";
       // signoutButton.style.display = "none";
     }
@@ -56,6 +59,7 @@ function Calendar() {
   }
 
   function listUpcomingEvents() {
+    console.log(gapi.client.calendar);
     gapi.client.calendar.events
       .list({
         calendarId: "primary",
@@ -68,6 +72,7 @@ function Calendar() {
       .then(function (response) {
         var events = response.result.items;
         console.log("Upcoming events:");
+        setCalendarEvents(events);
 
         if (events.length > 0) {
           for (let i = 0; i < events.length; i++) {
@@ -100,6 +105,7 @@ function Calendar() {
           Authorize
         </button>
       )}
+      <CalendarView calendarEvents={calendarEvents} />
     </>
   );
 }
